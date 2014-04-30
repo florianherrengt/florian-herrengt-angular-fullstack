@@ -1,6 +1,10 @@
 div(ng-include='\'partials/navbar.html\'')
 
 .row
+  pre
+    | id : test@test.com / pwd : test
+    br
+    | id : admin@test.com / pwd : admin
   .col-sm-12
     form.form(name='form', ng-submit='login(form)', novalidate='novalidate')
 
