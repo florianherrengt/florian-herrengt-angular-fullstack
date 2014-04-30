@@ -1,0 +1,16 @@
+div(ng-include='\'partials/navbar\'')
+
+
+//- .row.marketing
+//- div(loading-container="tableParams.settings().$loading")
+table(ng-table="tableParams" show-filter="true").table
+	tr(ng-repeat='thing in $data')
+		td(data-title="'Name'" filter="{'name' : 'text'}" sortable="'name'") {{thing.name}}
+		td(data-title="'Informations'" filter="{'info' : 'text'}" sortable="'info'") {{thing.info}}
+
+	//- div(ng-repeat='thing in awesomeThings')
+	//- 	h4 {{thing.name}}
+	//- 	p {{thing.info}}
+
+.footer
+	p Technical demo
