@@ -10,7 +10,6 @@ var should = require('should'),
     path = require('path'),
     user;
 app.set('views', path.normalize(__dirname + '/../../../app/views'));
-// console.log(app.get('views'));
 passportStub.install(app);
 var req = request(app);
 
@@ -72,15 +71,4 @@ describe('GET /api/awesomeThings', function() {
         done();
       });
   });
-  // it('should respond with JSON array', function(done) {
-  //   request(app)
-  //     .get('/api/awesomeThings')
-  //     .expect(200)
-  //     .expect('Content-Type', /json/)
-  //     .end(function(err, res) {
-  //       if (err) return done(err);
-  //       // res.body.should.be.instanceof(Array);
-  //       done();
-  //     });
-  // });
 });

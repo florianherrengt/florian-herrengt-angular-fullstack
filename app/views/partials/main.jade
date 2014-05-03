@@ -7,6 +7,7 @@ table(ng-table="tableParams" show-filter="true").table
 	tr(ng-repeat='thing in $data')
 		td(data-title="'Name'" filter="{'name' : 'text'}" sortable="'name'") {{thing.name}}
 		td(data-title="'Informations'" filter="{'info' : 'text'}" sortable="'info'") {{thing.info}}
+		td(data-title="'Type'" filter="{'type' : 'text'}" sortable="'type'") {{thing.type}}
 
 	//- div(ng-repeat='thing in awesomeThings')
 	//- 	h4 {{thing.name}}

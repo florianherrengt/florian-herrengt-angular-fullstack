@@ -5,7 +5,7 @@ angular.module('florianHerrengtApp')
 		Api = $resource('/api/awesomeThings');
 		$scope.tableParams = new ngTableParams
 			page: 1
-			count : 10
+			count : 3
 			sorting:
          	   name: 'asc'
 		,
