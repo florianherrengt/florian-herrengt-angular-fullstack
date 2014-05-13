@@ -12,10 +12,13 @@ angular.module('florianHerrengtApp', [
       .when '/',
         templateUrl: 'partials/main'
         controller: 'MainCtrl'
-        authenticate: true
+        # authenticate: true
       .when '/login',
         templateUrl: 'partials/login'
         controller: 'LoginCtrl'
+      .when '/admin',
+        templateUrl: 'partials/admin'
+        controller: 'MainCtrl'
       .when '/signup',
         templateUrl: 'partials/signup'
         controller: 'SignupCtrl'

@@ -26,6 +26,16 @@ describe('GET /api/awesomeThings', function() {
       user.save(done);
   });
 
+  it('should respond with 404 if route undefined', function(done) {
+    req
+      .get('/api/nowayadress')
+      .expect(404)
+      .end(function(err, res) {
+        if (err) return done(err);
+        done();
+      });
+  });
+
   it('should respond with 401 if user not authenticated', function(done) {
     req
       .get('/api/awesomeThings')
